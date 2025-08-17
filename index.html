@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Roadmap</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #18ab61;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .roadmap {
+      position: relative;
+      width: 80%;
+      margin: 2rem auto;
+    }
+
+    .step {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem 2.5rem 1.5rem 4.5rem;
+      margin: 2rem 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .step:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .step h2 {
+      margin: 0 0 0.5rem;
+      color: #23b140;
+      font-size: 1.3rem;
+    }
+
+    .step-content {
+      display: none;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      line-height: 1.6;
+      animation: fadeIn 0.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Timeline line */
+    .roadmap::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 32px;
+      width: 4px;
+      height: 100%;
+      background: #19b96e;
+    }
+
+    /* Circle icons */
+    .icon {
+      position: absolute;
+      left: 0;
+      top: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #b5dbc4;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .step {
+      animation: fadeInUp 0.8s ease forwards;
+    }
+  </style>
+</head>
+<body>
+
+  <header>📘 AI Roadmap 🚀</header>
+   <h2 style="text-align: center; font-size: 18px; color: #555; margin-top: 0;">
+  Geeks for Geeks
+</h2>
+
+
+  <section class="roadmap">
+    <div class="step" onclick="toggleContent(this)">
+      <div class="icon">1️⃣</div>
+      <h2>Basics 📝</h2>
+      <div class="step-content">
+        <h3>Week 1 :</h3>
+        <p>📖What is AI</p>
+        <p>📖Types of AI: Narrow AI, General AI , Super AI</p>
+        <p>📖Branches/Fields of AI: Deeplearning, Natural Language Processing, Computer Vision , Robotics, Expert Systems</p>
+        <p>📖Usage and Explaination of 30 useful AI Tools for daily Life</p>
+        <p>📖Applications in AI : Healthcare,Finance,Marketing,Automation</p>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggleContent(this)">
+      <div class="icon">2️⃣</div>
+      <h2>Mathematics for AI🔍</h2>
+      <div class="step-content">
+        <h3>Week 2 :</h3>
+        <p>📝 Linear Algebra: Vector ,Matrices, Eigen value </p>
+        <p>📝 Probability & Statistics : Distributors ,Bayes, Sampling </p>
+        <p>📝 Calcus: Derivativesb, Gradient , Chain Rule </p>
+        <p>📝 Optimization: Gradient Descent , Cost Function </p>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggleContent(this)">
+      <div class="icon">3️⃣</div>
+      <h2>Starting with Python Basics 🎯</h2>
+      <div class="step-content">
+        <h3>Week 3: </h3>
+        <p>📚Learn Basics , Syntax, Functions...</p>
+        <p>📚 Small Projects : Calculator , File Handler</p>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggleContent(this)">
+      <div class="icon">4️⃣</div>
+      <h2>Skilling up in language 🛠️</h2>
+      <div class="step-content">
+        <h3>Week 4 : </h3>
+        <p>📚 Algorithms and Data Structures</p>
+        <p>📚 Time and Space Complexity</p>
+        <p>📚 Oops and Design Principles</p> 
+        <p>👩‍💻 Practical skills</p>
+        <p>💼 </p>
+        <p>🤝 </p>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggleContent(this)">
+      <div class="icon">5️⃣</div>
+      <h2>Introduction to AI & Machine Learning🚀</h2>
+      <div class="step-content">
+        <h3>Week 5 : </h3>
+        <p>🌍Understand what AI, ML, DL, and Data Science mean</p>
+        <p>💡 Innovation: Learn with simple projects</p>
+        <p>✨Predict house prices (regression), Spam classifier (classification), Movie recommendations (clustering) </p>
+        <p>📌 Tools: Scikit-learn</p>
+      </div>
+    </div>
+      <div class="step" onclick="toggleContent(this)">
+      <div class="icon">6️⃣</div>
+      <h2>Deep Learning (DL) 🚀</h2>
+      <div class="step-content">
+        <h3>Week 6 :</h3>
+        <p>🌍 Neural Networks Basics:
+
+Perceptron, activation functions
+
+Forward & backward propagation</p>
+        <p>💡Learn frameworks:
+
+TensorFlow or PyTorch (choose one, PyTorch is beginner-friendly)</p>
+        <p>✨ Build projects:
+
+Handwritten digit recognition (MNIST)
+
+Image classifier (CIFAR-10)</p>
+      </div>
+    </div>
+      <div class="step" onclick="toggleContent(this)">
+      <div class="icon">7️⃣</div>
+      <h2>Specialized AI Fields 🚀</h2>
+      <div class="step-content">
+        <h3>Week 7 : </h3>
+        <p>🌍Computer Vision (CV): Image recognition, object detection, OpenCV</p>
+        <p>💡Natural Language Processing (NLP): Chatbots, text summarization, sentiment analysis</p>
+        <p>✨Generative AI (🔥 Trend in 2025): LLMs (like GPT), image generation (Stable Diffusion, DALL·E)</p>
+        <p>✨Reinforcement Learning: Game-playing AI, robotics</p>
+      </div>
+    </div>
+     <div class="step" onclick="toggleContent(this)">
+      <div class="icon">8️⃣</div>
+      <h2>. Essential Tools & Skills 🚀</h2>
+      <div class="step-content">
+        <h3>Week 8 : </h3>
+        <p>🌍Data Handling: SQL, data cleaning</p>
+        <p>🌍Version Control: Git + GitHub</p>
+        <p>💡Cloud & Deployment: Azure, AWS, or GCP</p>
+        <p>✨ MLOps (basics): model deployment & monitoring</p>
+      </div>
+    </div>
+     <div class="step" onclick="toggleContent(this)">
+      <div class="icon">9️⃣</div>
+      <h2>Projects & Portfolio (Very Important in 2025)🚀</h2>
+      <div class="step-content">
+
+        <h3>Week 9 : </h3>
+        <h3>Build 4–5 solid projects (instead of 20 half-done ones):</h3>
+        <p>💡AI-powered chatbot</p>
+        <p>💡Image classifier for real-world dataset</p>
+        <p>💡 Recommendation system</p>
+        <p>💡A Generative AI project (text, image, or music)</p>
+         <p>Upload them on GitHub + LinkedIn ✅</p>
+      </div>
+    </div>
+     <div class="step" onclick="toggleContent(this)">
+      <div class="icon">🔟</div>
+      <h2>Keep Up with AI in 2025🚀</h2>
+      <div class="step-content">
+        <h3>Week 10 : </h3>
+        <p> ✨latest research: Hugging Face, Arxiv, Papers with Code</p>
+        <p> ✨Learn about LLMs & multimodal AI (text + image + audio combined)</p>
+        <p> ✨Participate in Kaggle competitions</p>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleContent(stepElement) {
+      const content = stepElement.querySelector('.step-content');
+      const isVisible = content.style.display === 'block';
+      document.querySelectorAll('.step-content').forEach(c => c.style.display = 'none');
+      if (!isVisible) {
+        content.style.display = 'block';
+      }
+    }
+
+    // Small animation effect when scrolling
+    const steps = document.querySelectorAll('.step');
+    window.addEventListener('scroll', () => {
+      steps.forEach(step => {
+        const rect = step.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 100){
+          step.style.opacity = 1;
+          step.style.transform = 'translateY(0)';
+        }
+      });
+    });
+  </script>
+
+    <p style="font-size: 12px; text-align: center; color: gray;">
+      © 2025 All rights reserved | GeeksforGeeks
+    </p>
+</body>
+</html>
